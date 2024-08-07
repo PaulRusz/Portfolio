@@ -1,7 +1,7 @@
 import React, { useState, useRef } from "react";
 import emailjs from "emailjs-com";
-import { motion } from "framer-motion"; // Ensure framer-motion is installed
-import "./styles/contact.scss"; // Import your SCSS file
+import { motion } from "framer-motion";
+import styles from "./Contact.module.scss"; // Use CSS Module
 
 export default function Contact() {
   const linkedInImage = "/linkedin.png"; // Path to your LinkedIn image
@@ -73,30 +73,30 @@ export default function Contact() {
 
   return (
     <motion.div
-      className="page1"
+      className={styles.page1} // Use CSS Module
       initial={{ opacity: 0 }}
       animate={{ opacity: 1, transition: { duration: 1 } }}
       exit={{ opacity: 0 }}
     >
-      <div className="contactContainer">
+      <div className={styles.contactContainer}>
         <h1>Contact Me</h1>
 
-        <div className="divider"></div>
+        <div className={styles.divider}></div>
 
-        <div className="contactTextContainer">
+        <div className={styles.contactTextContainer}>
           <p>Have a question or want to get in touch?</p>
           <p>Feel free to reach out!</p>
           <p>
             Fill out the form below, email me, or check out one of the links
             below.
           </p>
-          <div className="divider3"></div>
+          <div className={styles.divider3}></div>
         </div>
 
-        <form className="contactForm" ref={form} onSubmit={sendEmail}>
+        <form className={styles.contactForm} ref={form} onSubmit={sendEmail}>
           {isFormSubmitted && (
             <motion.p
-              className="model"
+              className={styles.model}
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
@@ -107,7 +107,7 @@ export default function Contact() {
           )}
           <p>Send me a message</p>
           <input
-            className="name"
+            className={styles.name}
             type="text"
             name="name"
             value={formData.name}
@@ -115,7 +115,7 @@ export default function Contact() {
             placeholder="Your Name"
           />
           <input
-            className="email"
+            className={styles.email}
             type="email"
             name="email"
             value={formData.email}
@@ -123,18 +123,18 @@ export default function Contact() {
             placeholder="Your Email"
           />
           <textarea
-            className="message"
+            className={styles.message}
             name="message"
             value={formData.message}
             onChange={handleChange}
             placeholder="Message..."
           ></textarea>
-          <button className="button" type="submit">
+          <button className={styles.button} type="submit">
             Send
           </button>
         </form>
 
-        <div className="contactInfo">
+        <div className={styles.contactInfo}>
           <ul>
             <li>
               <a href="mailto:PaulRuszkay@gmail.com">
@@ -147,7 +147,11 @@ export default function Contact() {
               </a>
             </li>
             <li>
-              <img src={linkedInImage} className="linkedIn" alt="LinkedIn" />
+              <img
+                src={linkedInImage}
+                className={styles.linkedIn}
+                alt="LinkedIn"
+              />
               <a href="https://www.linkedin.com/in/paul-ruszkay-a2ba075b/">
                 LinkedIn - Paul Ruszkay
               </a>

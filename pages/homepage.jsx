@@ -1,7 +1,7 @@
 import React from "react";
 import ImageSlider from "./ImageSlider"; // Import your ImageSlider component
 import ImageSlider2 from "./ImageSlider2"; // Import your ImageSlider2 component
-import "./styles/global.scss"; // Import your SCSS file
+import styles from "./Home.module.scss"; // Import your CSS Module
 import { Helmet } from "react-helmet-async"; // Import react-helmet-async
 
 export default function Home() {
@@ -16,21 +16,21 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Helmet>
 
-      <div className="homepageContainer">
-        <div className="homepageSlideShow">
-          <main className="flex min-h-screen flex-col items-center justify-center py-2">
+      <div className={styles.homepageContainer}>
+        <div className={styles.homepageSlideShow}>
+          <main className={styles.main}>
             <ImageSlider />
           </main>
         </div>
 
-        <div className="homepageTextContainer">
+        <div className={styles.homepageTextContainer}>
           <h1>Hey, I'm Paul!</h1>
-          <div className="divider3"></div>
-          <p className="homepageText">Take a look around.</p>
+          <div className={styles.divider3}></div>
+          <p className={styles.homepageText}>Take a look around.</p>
         </div>
 
-        <div className="homepageSlideShow2">
-          <main className="flex min-h-screen flex-col items-center justify-center py-2">
+        <div className={styles.homepageSlideShow2}>
+          <main className={styles.main}>
             <ImageSlider2 />
           </main>
         </div>
