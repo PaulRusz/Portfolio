@@ -1,20 +1,18 @@
 import React from "react";
-import ImageSlider from "./ImageSlider"; // Import your ImageSlider component
-import ImageSlider2 from "./ImageSlider2"; // Import your ImageSlider2 component
-import styles from "./Home.module.scss"; // Import your CSS Module
+import ImageSlider from "../components/imageslider.tsx"; // Import your ImageSlider component
+import ImageSlider2 from "../components/imageslider2.tsx"; // Import your ImageSlider2 component
+import styles from "../styles/homepage.scss";
 import { Helmet } from "react-helmet-async"; // Import react-helmet-async
 
 export default function Home() {
   return (
     <>
-      <Helmet>
-        <title>Home Page</title>
-        <meta
-          name="description"
-          content="Image slider example with React and SCSS"
-        />
-        <link rel="icon" href="/favicon.ico" />
-      </Helmet>
+      <title>Home Page</title>
+      <meta
+        name="description"
+        content="Image slider example with React and SCSS"
+      />
+      <link rel="icon" href="/favicon.ico" />
 
       <div className={styles.homepageContainer}>
         <div className={styles.homepageSlideShow}>

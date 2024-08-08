@@ -1,7 +1,7 @@
 import React, { useState, useRef } from "react";
 import emailjs from "emailjs-com";
 import { motion } from "framer-motion";
-import styles from "./Contact.module.scss"; // Use CSS Module
+import styles from "../styles/contact.scss";
 
 export default function Contact() {
   const linkedInImage = "/linkedin.png"; // Path to your LinkedIn image

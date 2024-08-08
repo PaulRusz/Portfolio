@@ -1,9 +1,6 @@
 import React from "react";
-import styles from "./Portfolio.module.scss";
-import Navbar from "../../components/Navbar/Navbar";
-import Footer from "../../components/Footer/Footer";
 import { motion } from "framer-motion";
-import Image from "next/image";
+import styles from "../styles/portfolio.scss"; // Use module.scss for better scope
 
 export default function Portfolio() {
   return (
@@ -34,8 +31,9 @@ export default function Portfolio() {
                   FriendsBlog
                   <br />
                   <br />
-                  <Image
-                    src="/FriendsBlog.png"
+                  {/* Use img instead of Image */}
+                  <img
+                    src={process.env.PUBLIC_URL + "/FriendsBlog.png"} // Correct path to image
                     alt="Friends Blog"
                     width={500}
                     height={500}
@@ -72,8 +70,8 @@ export default function Portfolio() {
                   Workout Tracker 1.0
                   <br />
                   <br />
-                  <Image
-                    src="/Workout1.0.png"
+                  <img
+                    src={process.env.PUBLIC_URL + "/Workout1.0.png"}
                     alt="Workout App 1.0"
                     width={500}
                     height={500}
@@ -112,8 +110,8 @@ export default function Portfolio() {
                   Workout Tracker 2.0
                   <br />
                   <br />
-                  <Image
-                    src="/Workout2.png"
+                  <img
+                    src={process.env.PUBLIC_URL + "/Workout2.png"}
                     alt="Workout App 2.0"
                     width={500}
                     height={500}

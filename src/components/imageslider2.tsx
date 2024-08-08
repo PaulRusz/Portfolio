@@ -1,81 +1,74 @@
-import { useState, useEffect } from "react";
-import Image from "next/image";
-import { StaticImageData } from "next/image";
-import image1 from "../../public/SA.png";
-import image2 from "@/public/SA2.png";
-// import image3 from "@/public/image3.jpg";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import React, { useState, useEffect } from "react";
+import image1 from "../assets/images/SA.png";
+import image2 from "../assets/images/SA2.png";
+import styles from "../styles/imageslider2.scss";
 
-import styles from "./ImageSlider.module.css";
-
-// image data
+// Remove `StaticImageData` interface usage if not needed
 interface ImageData {
-  src: StaticImageData;
+  src: string; // Use string since you're using the regular <img> tag
 }
 
-// image array
 const images: ImageData[] = [
   { src: image1 },
   { src: image2 },
   // { src: image3 },
 ];
 
-export default function ImageSlider(): JSX.Element {
+export default function ImageSlider2(): JSX.Element {
   // Keeps track of the current image index
-  const [currentIndex, setCurrentIndex] = useState < number > 0;
+  const [currentIndex, setCurrentIndex] = useState<number>(0);
 
-  // determines if the image is being hovered over
-  const [isHovered, setIsHovered] = useState < boolean > false;
+  // Determines if the image is being hovered over
+  const [isHovered, setIsHovered] = useState<boolean>(false);
 
-  // function to show the previous slide
+  // Function to show the previous slide
   const prevSlide = (): void => {
     setCurrentIndex(
       (prevIndex) => (prevIndex - 1 + images.length) % images.length
     );
   };
 
-  // function to show the next slide
+  // Function to show the next slide
   const nextSlide = (): void => {
-    setCurrentIndex((prevSlide) => (prevSlide + 1) % images.length);
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
   };
 
-  // effect to handle auto slide transition
+  // Effect to handle auto slide transition
   useEffect(() => {
-    // start auto slide transition if not hovered
+    // Start auto slide transition if not hovered
     if (!isHovered) {
       const interval = setInterval(() => {
         nextSlide();
       }, 3000);
 
-      // cleans the interval on component unmount
+      // Cleans the interval on component unmount
       return () => {
         clearInterval(interval);
       };
     }
   }, [isHovered]);
 
-  // handle mouse over event
+  // Handle mouse over event
   const handleMouseOver = (): void => {
     setIsHovered(true);
   };
 
-  // handle mouse leave event
+  // Handle mouse leave event
   const handleMouseLeave = (): void => {
     setIsHovered(false);
   };
 
   return (
-    <div className="sliderContainer">
+    <div className={styles.sliderContainer2}>
       <div
-        className={`${styles.sliderImage} group hover:-translate-y-2`}
+        className={`${styles.sliderImage2} group hover:-translate-y-2`}
         onMouseOver={handleMouseOver}
         onMouseLeave={handleMouseLeave}
       >
-        <Image
-          className={styles.sliderImage}
+        <img
+          className={styles.sliderImage2}
           src={images[currentIndex].src}
           alt={`Slider Image ${currentIndex + 1}`}
-          priority={true}
         />
       </div>
       {/* <button

@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from "react";
-import styles from "./About.module.scss";
-import Navbar from "../components/Navbar/Navbar";
-import Footer from "../components/Footer/Footer";
+import styles from "../styles/about.scss";
 import { motion } from "framer-motion";
 
 export default function About() {
