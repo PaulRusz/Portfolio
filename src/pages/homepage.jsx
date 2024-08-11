@@ -1,7 +1,7 @@
 import React from "react";
 import ImageSlider from "../components/imageslider.tsx"; // Import your ImageSlider component
 import ImageSlider2 from "../components/imageslider2.tsx"; // Import your ImageSlider2 component
-import styles from "../styles/homepage.scss";
+import styles from "../styles/homepage.module.scss";
 
 export default function Home() {
   return (

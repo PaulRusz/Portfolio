@@ -7,7 +7,7 @@ import About from "./pages/about";
 import Contact from "./pages/contact"; // Import your Contact page component
 import Resume from "./pages/resume"; // Import your Resume page component
 import Portfolio from "./pages/portfolio";
-import "./styles/global.scss"; // Import global styles
+import "./styles/global.module.scss"; // Import global styles
 
 function App() {
   return (

@@ -1,4 +1,4 @@
-import styles from "../styles/resume.scss";
+import styles from "../styles/resume.module.scss";
 import React from "react";
 import { motion } from "framer-motion";
 

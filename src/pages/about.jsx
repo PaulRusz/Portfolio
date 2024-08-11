@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import styles from "../styles/about.scss";
+import styles from "../styles/about.module.scss";
 import { motion } from "framer-motion";
 
 export default function About() {

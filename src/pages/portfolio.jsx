@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import styles from "../styles/portfolio.scss"; // Use module.scss for better scope
+import styles from "../styles/portfolio.module.scss"; // Use module.scss for better scope
 
 export default function Portfolio() {
   return (

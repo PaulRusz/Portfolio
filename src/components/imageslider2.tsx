@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import image1 from "../assets/images/SA.png";
 import image2 from "../assets/images/SA2.png";
-import styles from "../styles/imageslider2.scss";
+import styles from "../styles/imageslider2.module.scss";
 
 // Remove `StaticImageData` interface usage if not needed
 interface ImageData {
