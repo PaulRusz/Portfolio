@@ -6,7 +6,7 @@ export default function Navbar({ children }) {
   const [showMenu, setShowMenu] = useState(false);
 
   return (
-    <div className={styles.container}>
+    <div className="container">
       {children}
       <nav className={`${styles.navbar} ${showMenu ? styles.show : ""}`}>
         <div>
@@ -16,7 +16,7 @@ export default function Navbar({ children }) {
         </div>
 
         <button
-          className={styles.hamburgerMenu}
+          className="hamburgerMenu"
           onClick={() => setShowMenu(!showMenu)}
         >
           &#9776;
@@ -24,22 +24,22 @@ export default function Navbar({ children }) {
 
         <ul className={`${styles.links} ${showMenu ? styles.showMenu : ""}`}>
           <li>
-            <Link to="/about" className={styles.links}>
+            <Link to="/about" className="links">
               About
             </Link>
           </li>
           <li>
-            <Link to="/portfolio" className={styles.links}>
+            <Link to="/portfolio" className="links">
               Portfolio
             </Link>
           </li>
           <li>
-            <Link to="/contact" className={styles.links}>
+            <Link to="/contact" className="links">
               Contact
             </Link>
           </li>
           <li>
-            <Link to="/resume" className={styles.links}>
+            <Link to="/resume" className="links">
               Resume
             </Link>
           </li>
