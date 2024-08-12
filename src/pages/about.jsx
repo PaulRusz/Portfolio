@@ -28,13 +28,7 @@ export default function About() {
           <h1 className={styles.h1}>A Bit About Me:</h1>
 
           {currentImage && (
-            <img
-              src={currentImage}
-              alt={`Image of ${
-                currentImage === monacoImage ? "Monaco" : "a wedding"
-              }`}
-              className={styles.image}
-            />
+            <img src={currentImage} alt="" className={styles.image} />
           )}
 
           <div className={styles.divider}></div>

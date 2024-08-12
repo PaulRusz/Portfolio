@@ -68,7 +68,7 @@ export default function ImageSlider2(): JSX.Element {
         <img
           className={styles.sliderImage2}
           src={images[currentIndex].src}
-          alt={`Slider Image ${currentIndex + 1}`}
+          alt="" 
         />
       </div>
       {/* <button
