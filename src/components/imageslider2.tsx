@@ -22,11 +22,11 @@ export default function ImageSlider2(): JSX.Element {
   const [isHovered, setIsHovered] = useState<boolean>(false);
 
   // Function to show the previous slide
-  const prevSlide = (): void => {
-    setCurrentIndex(
-      (prevIndex) => (prevIndex - 1 + images.length) % images.length
-    );
-  };
+  // const prevSlide = (): void => {
+  //   setCurrentIndex(
+  //     (prevIndex) => (prevIndex - 1 + images.length) % images.length
+  //   );
+  // };
 
   // Function to show the next slide
   const nextSlide = (): void => {

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 
 .portfolio {
     display: flex;
@@ -11,28 +13,38 @@
 }
 
 .header2{
-    font-size: 25px;
-    text-decoration: underline;
+    font-size: 33px;
+    // text-decoration: underline;
     word-spacing: 2px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+.projectDivider ul {
+    list-style-type: none;
 }
 
 .portfolio p {
     margin-bottom: 1px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    text-align: center;
 }
 
-.fancyBullet {
-    list-style-type: none;
-    padding-left: 20px;
-    position: relative;
-  }
+// .fancyBullet {
+//     list-style-type: none;
+//     padding-left: 20px;
+//     position: relative;
+//   }
   
-  .fancyBullet:before {
-    content: "\2022";
-    color: #333333; 
-    font-size: 20px; 
-    // position: absolute;
-    // left: 0;
-  }
+//   .fancyBullet:before {
+//     content: "\2022";
+//     color: #333333; 
+//     font-size: 20px; 
+//     // position: absolute;
+//     // left: 0;
+//   }
 
 .divider {
     width: 100%;
@@ -48,6 +60,7 @@
     margin: 20px 0;
 }
 
+
 .link {
     display: flex;
     flex-direction: column;
@@ -59,7 +72,7 @@
 }
 
 .projectDivider:hover {
-    transform: scale(1.1);
+    transform: scale(.9);
 }
 
 .projectDivider {
@@ -74,6 +87,10 @@
     // background-color: #748d92;
     color: white;
     transition: transform 0.3s ease;
+}
+
+.projectDivider a {
+    font-size: 28px;
 }
 
 

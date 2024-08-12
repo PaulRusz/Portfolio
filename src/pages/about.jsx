@@ -1,12 +1,14 @@
 import React, { useState, useEffect } from "react";
 import styles from "../styles/about.module.scss";
+import monacoImage from "../assets/images/Monaco.png";
+import weddingImagine from "../assets/images/wedding.png";
 import { motion } from "framer-motion";
 
 export default function About() {
   const [currentImage, setCurrentImage] = useState(null);
 
   useEffect(() => {
-    const images = ["/Monaco.png", "/wedding.png"];
+    const images = [monacoImage, weddingImagine];
     const randomIndex = Math.floor(Math.random() * images.length);
     setCurrentImage(images[randomIndex]);
   }, []); // Empty dependency array to run only on mount
@@ -28,7 +30,9 @@ export default function About() {
           {currentImage && (
             <img
               src={currentImage}
-              alt="Random Image"
+              alt={`Image of ${
+                currentImage === monacoImage ? "Monaco" : "a wedding"
+              }`}
               className={styles.image}
             />
           )}

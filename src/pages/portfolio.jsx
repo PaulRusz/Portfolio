@@ -1,6 +1,9 @@
 import React from "react";
 import { motion } from "framer-motion";
-import styles from "../styles/portfolio.module.scss"; // Use module.scss for better scope
+import styles from "../styles/portfolio.module.scss";
+import FriendsBlog from "../assets/images/FriendsBlog.png";
+import Workout1 from "../assets/images/Workout1.0.png";
+import Workout2 from "../assets/images/Workout2.png";
 
 export default function Portfolio() {
   return (
@@ -20,6 +23,7 @@ export default function Portfolio() {
           <h2 className={styles.header2}>Here are some of my projects:</h2>
 
           <div className={styles.projectDivider}>
+            <br></br>
             <ul>
               <li>
                 <a
@@ -31,9 +35,8 @@ export default function Portfolio() {
                   FriendsBlog
                   <br />
                   <br />
-                  {/* Use img instead of Image */}
                   <img
-                    src={process.env.PUBLIC_URL + "/FriendsBlog.png"} // Correct path to image
+                    src={process.env.PUBLIC_URL + FriendsBlog}
                     alt="Friends Blog"
                     width={500}
                     height={500}
@@ -56,9 +59,11 @@ export default function Portfolio() {
             <a href="https://github.com/PaulRusz/FriendsBlog">FriendsBlog</a>{" "}
             GitHub for details on my contributions.
           </p>
+          <br></br>
 
           <div className={styles.divider2}></div>
           <div className={styles.projectDivider}>
+            <br></br>
             <ul>
               <li>
                 <a
@@ -71,7 +76,7 @@ export default function Portfolio() {
                   <br />
                   <br />
                   <img
-                    src={process.env.PUBLIC_URL + "/Workout1.0.png"}
+                    src={process.env.PUBLIC_URL + Workout1}
                     alt="Workout App 1.0"
                     width={500}
                     height={500}
@@ -96,9 +101,11 @@ export default function Portfolio() {
             </a>{" "}
             GitHub for details on my contributions.
           </p>
+          <br></br>
 
           <div className={styles.divider2}></div>
           <div className={styles.projectDivider}>
+            <br></br>
             <ul>
               <li>
                 <a
@@ -111,7 +118,7 @@ export default function Portfolio() {
                   <br />
                   <br />
                   <img
-                    src={process.env.PUBLIC_URL + "/Workout2.png"}
+                    src={process.env.PUBLIC_URL + Workout2}
                     alt="Workout App 2.0"
                     width={500}
                     height={500}
@@ -124,13 +131,14 @@ export default function Portfolio() {
           <p className={styles.fancyBullet}>
             Workout Tracker 2.0 is an improved version of 1.0 with new features
             including user authentication, improved workout planner,
+            <br></br>
             customizable plans, calendar integration, and a more responsive
             design.
           </p>
           <p className={styles.fancyBullet}>
             Workout Tracker 2.0 utilized HTML, CSS, JavaScript (with backend
-            functionality and dynamic content generation), Bootstrap, Day.js,
-            WGER API, Quotable API.
+            functionality and dynamic content generation),
+            <br></br> Bootstrap, Day.js, WGER API, Quotable API.
           </p>
           <p className={styles.fancyBullet}>
             Refer to{" "}
@@ -139,6 +147,7 @@ export default function Portfolio() {
             </a>{" "}
             GitHub for details on my contributions.
           </p>
+          <br></br>
 
           {/* SPACE FOR FUTURE PROJECTS TO GO HERE */}
         </div>

@@ -126,6 +126,10 @@ input[type="text"], textarea {
 }
 }
 
+.contactInfo ul {
+    list-style-type: none;
+}
+
 .contactInfo {
     display: flex;
     flex-direction: column;
@@ -135,7 +139,7 @@ input[type="text"], textarea {
     margin: 10px;
     border: 1px solid #ccc;
     border-radius: 75px;
-    box-shadow: 0 0 10px rgba(0, 0, 0)
+    box-shadow: 0 0 10px rgba(0, 0, 0);
 }
 
 .linkedIn {
@@ -184,5 +188,8 @@ input[type="text"], textarea {
     
     .message {
         width: 80%;
+    }
+    .contactInfo {
+        width: 90%;
     }
 }

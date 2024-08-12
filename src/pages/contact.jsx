@@ -2,10 +2,9 @@ import React, { useState, useRef } from "react";
 import emailjs from "emailjs-com";
 import { motion } from "framer-motion";
 import styles from "../styles/contact.module.scss";
+import linkedin from "../assets/images/linkedin.png";
 
 export default function Contact() {
-  const linkedInImage = "/linkedin.png"; // Path to your LinkedIn image
-
   // State for form data
   const [formData, setFormData] = useState({
     name: "",
@@ -47,12 +46,15 @@ export default function Contact() {
     e.preventDefault();
 
     emailjs
-      .sendForm("service_w4b10i6", "template_kg2bmq2", form.current, {
-        publicKey: "7fbEPFKwQg92_gfOL",
-      })
+      .sendForm(
+        "service_w4b10i6",
+        "template_kg2bmq2",
+        form.current,
+        "7fbEPFKwQg92_gfOL"
+      )
       .then(
-        () => {
-          console.log("SUCCESS!");
+        (response) => {
+          console.log("SUCCESS!", response.status, response.text);
           // Reset form fields after submission
           setFormData({
             name: "",
@@ -66,7 +68,8 @@ export default function Contact() {
           }, 3000);
         },
         (error) => {
-          console.log("FAILED...", error.text);
+          console.error("FAILED...", error);
+          console.error("ERROR DETAILS", error.status, error.text);
         }
       );
   };
@@ -147,11 +150,7 @@ export default function Contact() {
               </a>
             </li>
             <li>
-              <img
-                src={linkedInImage}
-                className={styles.linkedIn}
-                alt="LinkedIn"
-              />
+              <img src={linkedin} className={styles.linkedIn} alt="LinkedIn" />
               <a href="https://www.linkedin.com/in/paul-ruszkay-a2ba075b/">
                 LinkedIn - Paul Ruszkay
               </a>

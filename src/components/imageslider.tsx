@@ -21,12 +21,12 @@ export default function ImageSlider(): JSX.Element {
   // Determines if the image is being hovered over
   const [isHovered, setIsHovered] = useState<boolean>(false);
 
-  // Function to show the previous slide
-  const prevSlide = (): void => {
-    setCurrentIndex(
-      (prevIndex) => (prevIndex - 1 + images.length) % images.length
-    );
-  };
+  // // Function to show the previous slide
+  // const prevSlide = (): void => {
+  //   setCurrentIndex(
+  //     (prevIndex) => (prevIndex - 1 + images.length) % images.length
+  //   );
+  // };
 
   // Function to show the next slide
   const nextSlide = (): void => {
