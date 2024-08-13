@@ -87,6 +87,8 @@
     // background-color: #748d92;
     color: white;
     transition: transform 0.3s ease;
+    max-width: 70%;
+
 }
 
 .projectDivider a {
@@ -103,7 +105,8 @@
         justify-content: center;
         width: 90%; 
         margin: 15px; 
-        padding: 10px; 
+        text-align: center;
+        // padding: 10px; 
     }
 
     .link {

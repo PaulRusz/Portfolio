@@ -106,3 +106,13 @@
         display: block;
     }
 }
+
+@media (min-width: 769px) {
+    .navbar {
+        height: 60px; // Set the height back to the original size
+    }
+
+    .links {
+        display: flex; // Display the navigation links
+    }
+}
