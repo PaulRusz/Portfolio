@@ -4,7 +4,6 @@ import { motion } from "framer-motion";
 
 export default function Resume() {
   return (
-    // Code for 'fade in' transition
     <motion.div
       className="page1"
       initial={{ opacity: 0 }}
@@ -22,11 +21,8 @@ export default function Resume() {
           >
             Download my CV
           </a>
-          {/* <h2>Summary</h2> */}
 
           <div className={styles.backgroundContainer}>
-            {/* <h3>Background:</h3> */}
-
             <p>
               With a strong foundation in front-end and back-end development, I
               strive to deliver seamless and engaging digital experiences.

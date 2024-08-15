@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import styles from "../styles/navbar.module.scss"; // Note the module.scss extension
+import styles from "../styles/navbar.module.scss";
 
 export default function Navbar({ children }) {
   const [showMenu, setShowMenu] = useState(false);
@@ -8,7 +8,6 @@ export default function Navbar({ children }) {
   return (
     <div className={styles.container}>
       {" "}
-      {/* Ensure to use styles from SCSS module */}
       {children}
       <nav className={`${styles.navbar} ${showMenu ? styles.show : ""}`}>
         <div>
@@ -18,7 +17,7 @@ export default function Navbar({ children }) {
         </div>
 
         <button
-          className={styles.hamburgerMenu} // Use styles from SCSS module
+          className={styles.hamburgerMenu}
           onClick={() => setShowMenu(!showMenu)}
         >
           &#9776;

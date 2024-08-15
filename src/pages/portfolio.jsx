@@ -19,9 +19,7 @@ export default function Portfolio() {
           <div className={styles.divider}></div>
           <h2 className={styles.header2}>Here are some of my projects:</h2>
 
-          {/* Project Grid Container */}
           <div className={styles.projectGrid}>
-            {/* First Project */}
             <div className={styles.projectItem}>
               <a
                 className={styles.link}
@@ -57,7 +55,6 @@ export default function Portfolio() {
               </p>
             </div>
 
-            {/* Second Project */}
             <div className={styles.projectItem}>
               <a
                 className={styles.link}
@@ -93,7 +90,6 @@ export default function Portfolio() {
               </p>
             </div>
 
-            {/* Third Project */}
             <div className={styles.projectItem}>
               <a
                 className={styles.link}

@@ -11,13 +11,10 @@ export default function About() {
     const images = [monacoImage, weddingImagine];
     const randomIndex = Math.floor(Math.random() * images.length);
     setCurrentImage(images[randomIndex]);
-  }, []); // Empty dependency array to run only on mount
+  }, []);
 
   return (
     <>
-      {/* Optionally include Navbar if needed */}
-      {/* <Navbar /> */}
-
       <motion.div
         className={styles.page1}
         initial={{ opacity: 0 }}
@@ -72,9 +69,6 @@ export default function About() {
           </div>
         </div>
       </motion.div>
-
-      {/* Optionally include Footer if needed */}
-      {/* <Footer /> */}
     </>
   );
 }

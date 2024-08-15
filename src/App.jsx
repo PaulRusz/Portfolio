@@ -1,13 +1,13 @@
 // import React, { useState, useEffect } from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom"; // Import necessary components
-import Navbar from "./components/navbar"; // Import your Navbar component
-import Footer from "./components/footer"; // Import your Footer component
-import Home from "./pages/homepage"; // Import your Home page component
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Navbar from "./components/navbar";
+import Footer from "./components/footer";
+import Home from "./pages/homepage";
 import About from "./pages/about";
-import Contact from "./pages/contact"; // Import your Contact page component
-import Resume from "./pages/resume"; // Import your Resume page component
+import Contact from "./pages/contact";
+import Resume from "./pages/resume";
 import Portfolio from "./pages/portfolio";
-import "./styles/global.module.scss"; // Import global styles
+import "./styles/global.module.scss";
 
 function App() {
   //
