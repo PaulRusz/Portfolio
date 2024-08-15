@@ -12,7 +12,7 @@
   .homepageSlideShow {
     position: relative;
     border-radius: 15px;
-    margin: 20px;
+    margin: 10px;
   }
 
   .homepageSlideShow2 {
@@ -38,7 +38,12 @@
 .homepageTextContainer h1 {
   font-size: 45px;
   padding-bottom: 20px;
-  padding-right: 140px;
+  padding-right: 0px;
+  line-height: .8;
+}
+
+.heyText {
+  padding-right: 100px;
 }
 
   .homepageText {

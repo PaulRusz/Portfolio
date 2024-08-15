@@ -21,7 +21,10 @@ export default function Home() {
         </div>
 
         <div className={styles.homepageTextContainer}>
-          <h1>Hey, I'm Paul!</h1>
+          <h1>
+            <div className={styles.heyText}>Hey,</div>
+            <br></br>I'm Paul!
+          </h1>
           <div className={styles.divider3}></div>
           <p className={styles.homepageText}>Take a look around.</p>
         </div>
