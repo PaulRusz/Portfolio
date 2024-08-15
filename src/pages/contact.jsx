@@ -22,6 +22,11 @@ export default function Contact() {
   const sendEmail = (e) => {
     e.preventDefault();
 
+    if (!formData.name || !formData.email || !formData.message) {
+      alert("Please fill in all fields.");
+      return;
+    }
+
     emailjs
       .sendForm(
         "service_w4b10i6",
@@ -37,6 +42,7 @@ export default function Contact() {
             email: "",
             message: "",
           });
+          setIsFormSubmitted(true);
 
           setTimeout(() => {
             setIsFormSubmitted(false);
@@ -50,86 +56,81 @@ export default function Contact() {
 
   return (
     <motion.div
-      className={styles.page1}
+      className={styles.contactContainer}
       initial={{ opacity: 0 }}
       animate={{ opacity: 1, transition: { duration: 1 } }}
       exit={{ opacity: 0 }}
     >
-      <div className={styles.contactContainer}>
-        <h1>Contact Me</h1>
-        <div className={styles.divider}></div>
+      <h1>Contact Me</h1>
+      <div className={styles.divider}></div>
 
-        <div className={styles.contactTextContainer}>
-          <p>Have a question or want to get in touch?</p>
-          <p>Feel free to reach out!</p>
-          <p>
-            Fill out the form below, email me, or check out one of the links
-            below.
-          </p>
-          <div className={styles.divider3}></div>
-        </div>
+      <div className={styles.contactTextContainer}>
+        <p>Have a question or want to get in touch?</p>
+        <p>Feel free to reach out!</p>
+        <p>
+          Fill out the form below, email me, or check out one of the links
+          below.
+        </p>
+        <div className={styles.divider3}></div>
+      </div>
 
-        <form className={styles.contactForm} ref={form} onSubmit={sendEmail}>
-          {isFormSubmitted && (
-            <motion.p
-              className={styles.model}
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              transition={{ duration: 1 }}
-            >
-              <p>Message sent!</p>
-            </motion.p>
-          )}
-          <p>Send me a message</p>
-          <input
-            className={styles.name}
-            type="text"
-            name="name"
-            value={formData.name}
-            onChange={handleChange}
-            placeholder="Your Name"
-          />
-          <input
-            className={styles.email}
-            type="email"
-            name="email"
-            value={formData.email}
-            onChange={handleChange}
-            placeholder="Your Email"
-          />
-          <textarea
-            className={styles.message}
-            name="message"
-            value={formData.message}
-            onChange={handleChange}
-            placeholder="Message..."
-          ></textarea>
-          <button className={styles.button} type="submit">
-            Send
-          </button>
-        </form>
+      <form className={styles.contactForm} ref={form} onSubmit={sendEmail}>
+        {isFormSubmitted && (
+          <motion.p
+            className={styles.messageSent}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 1 }}
+          >
+            <p>Message sent!</p>
+          </motion.p>
+        )}
+        <p>Send me a message</p>
+        <input
+          type="text"
+          name="name"
+          value={formData.name}
+          onChange={handleChange}
+          placeholder="Your Name"
+        />
+        <input
+          type="email"
+          name="email"
+          value={formData.email}
+          onChange={handleChange}
+          placeholder="Your Email"
+        />
+        <textarea
+          name="message"
+          value={formData.message}
+          onChange={handleChange}
+          placeholder="Message..."
+        ></textarea>
+        <button className={styles.button} type="submit">
+          Send
+        </button>
+      </form>
 
-        <div className={styles.contactInfo}>
-          <ul>
-            <li>
-              <a href="mailto:PaulRuszkay@gmail.com">
-                📧 Email: PaulRuszkay@gmail.com
-              </a>
-            </li>
-            <li>
-              <a href="https://github.com/PaulRusz">
-                📁 GitHub: github.com/PaulRusz
-              </a>
-            </li>
-            <li>
-              <img src={linkedin} className={styles.linkedIn} alt="LinkedIn" />
-              <a href="https://www.linkedin.com/in/paul-ruszkay-a2ba075b/">
-                LinkedIn - Paul Ruszkay
-              </a>
-            </li>
-          </ul>
-        </div>
+      <div className={styles.contactInfo}>
+        <ul>
+          <li>
+            <a href="mailto:PaulRuszkay@gmail.com">
+              📧 Email: PaulRuszkay@gmail.com
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/PaulRusz">
+              📁 GitHub: github.com/PaulRusz
+            </a>
+          </li>
+          <li>
+            <img src={linkedin} className={styles.linkedIn} alt="LinkedIn" />
+            <a href="https://www.linkedin.com/in/paul-ruszkay-a2ba075b/">
+              LinkedIn - Paul Ruszkay
+            </a>
+          </li>
+        </ul>
       </div>
     </motion.div>
   );

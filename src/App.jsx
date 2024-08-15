@@ -1,4 +1,4 @@
-import React from "react";
+// import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom"; // Import necessary components
 import Navbar from "./components/navbar"; // Import your Navbar component
 import Footer from "./components/footer"; // Import your Footer component
@@ -10,16 +10,34 @@ import Portfolio from "./pages/portfolio";
 import "./styles/global.module.scss"; // Import global styles
 
 function App() {
+  //
+  // for the light/dark mode button -> not currently working properly
+  //
+  // const [theme, setTheme] = useState("light");
+
+  // const toggleTheme = () => {
+  //   const newTheme = theme === "light" ? "dark" : "light";
+  //   setTheme(newTheme);
+  // };
+
+  // useEffect(() => {
+  //   document.body.className = theme;
+  // }, [theme]);
+
   return (
     <div className="App">
-      {/* Router wraps the whole app to enable routing */}
       <Router>
         <Navbar />
+        {/* <div className="theme-toggle">
+          <button onClick={toggleTheme}>
+            Switch to {theme === "light" ? "Dark" : "Light"} Mode
+          </button>
+        </div> */}
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />{" "}
-          <Route path="/resume" element={<Resume />} />{" "}
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/resume" element={<Resume />} />
           <Route path="portfolio" element={<Portfolio />} />
         </Routes>
         <Footer />
