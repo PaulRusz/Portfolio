@@ -66,10 +66,10 @@
 
 .divider {
     width: 100%;
-    height: 1px;
-    // background-color: #124e66;
-    background-color: orange;
     margin: 20px 0;
+    height: 3px;
+    background: linear-gradient(to right, #FF6F61, #FFD700);
+    border-radius: 5px;
 }
 
 .divider3 {

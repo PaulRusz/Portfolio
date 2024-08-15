@@ -26,12 +26,11 @@ export default function About() {
       >
         <div className={styles.aboutMeContainer}>
           <h1 className={styles.h1}>A Bit About Me:</h1>
+          <div className={styles.divider}></div>
 
           {currentImage && (
             <img src={currentImage} alt="" className={styles.image} />
           )}
-
-          <div className={styles.divider}></div>
 
           <div className={styles.narrativeContainer}>
             <p>Born in New Jersey but have called Delaware home.</p>
