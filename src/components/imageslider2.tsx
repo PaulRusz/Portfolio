@@ -32,6 +32,7 @@ export default function ImageSlider2(): JSX.Element {
               index === currentIndex ? styles.show : ""
             }`}
             src={src}
+            loading="lazy"
             alt={`Slide ${index + 1}`}
           />
         ))}
