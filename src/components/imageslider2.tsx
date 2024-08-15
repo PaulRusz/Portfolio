@@ -7,16 +7,12 @@ import styles from "../styles/imageslider2.module.scss";
 
 const images = [image1, image2, image3, image4];
 
-export default function ImageSlider2(): JSX.Element {
-  const [currentIndex, setCurrentIndex] = useState<number>(0);
-
-  const nextSlide = (): void => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-  };
+export default function ImageSlider2() {
+  const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
     const interval = setInterval(() => {
-      nextSlide();
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
     }, 3000);
 
     return () => clearInterval(interval);
