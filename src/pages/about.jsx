@@ -30,7 +30,7 @@ export default function About() {
           )}
 
           <div className={styles.narrativeContainer}>
-            <p>Born in New Jersey but have called Delaware home.</p>
+            <p>Born in New Jersey but call Delaware home.</p>
             <div className={styles.divider3}></div>
             <p>
               My collegiate journey took me to Newark, Delaware, and Nashville,
