@@ -24,14 +24,16 @@ export default function Resume() {
 
           <div className={styles.backgroundContainer}>
             <p>
-              With a strong foundation in front-end and back-end development, I
-              strive to deliver seamless and engaging digital experiences.
+              {/* With a strong foundation in front-end and back-end development,  */}
+              I strive to deliver seamless and engaging digital experiences.
             </p>
             <div className={styles.divider3}></div>
             <p>
-              My ultimate goal is to continue honing my skills, collaborating
+              {/* My ultimate goal is to continue honing my skills, collaborating
               with talented individuals, and contributing to cutting-edge
-              projects that make a positive impact on society.
+              projects that make a positive impact on society. */}
+              My ultimate goal is to contribute to cutting-edge projects that
+              make a positive impact on our world.
             </p>
             <br />
             <br />

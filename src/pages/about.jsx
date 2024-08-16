@@ -53,9 +53,8 @@ export default function About() {
             <div className={styles.divider3}></div>
             <p>
               When I'm not immersed in work or coding projects, you can find me
-              staying active by working out, exploring new destinations to
-              experience diverse cultures (and of course food), and spending
-              some downtime outdoors.
+              staying active, spending some downtime outdoors, and exploring
+              this beautiful pale blue dot.
             </p>
             <p>
               I also spend my time diving into captivating reads, looking for

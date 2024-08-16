@@ -17,10 +17,12 @@
     padding: 20px;
     margin: 20px;
     color: #2e3944;
+    width: 80%;
   }
   
   .contactTextContainer p {
-    font-size: 1.2em; 
+    font-size: 25px; 
+    color: #f9f9f9;
   }
   
   .divider {
@@ -48,7 +50,7 @@
     border: 1px solid orange;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    background-color: #e3f2fd;
+    background-color: #f0f9ff;
   }
   
   .contactForm p {
@@ -66,11 +68,17 @@
     border: 1px solid #ccc;
     font-size: 16px; 
     color: white; 
+    background-color: #f0f9ff;
+  }
+
+  .contactForm textarea {
+    height: 150px;
+    width: 60%;
   }
   
   .contactForm input::placeholder,
   .contactForm textarea::placeholder {
-    color: #aaa; 
+    color: #333; 
   }
   
   .contactForm input:focus,
@@ -113,6 +121,7 @@
     color: #124e66;
     text-decoration: none;
     transition: color 0.3s ease;
+    
   }
   
   .contactInfo a:hover {
@@ -134,10 +143,11 @@
     
     .contactForm input,
     .contactForm textarea {
-      width: 100%;
+      width: 70%;
     }
     
     .contactInfo {
       width: 90%;
+      text-align: center;
     }
   }

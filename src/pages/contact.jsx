@@ -65,12 +65,12 @@ export default function Contact() {
       <div className={styles.divider}></div>
 
       <div className={styles.contactTextContainer}>
-        <p>Have a question or want to get in touch?</p>
+        <p>Want to get in touch?</p>
         <p>Feel free to reach out!</p>
-        <p>
+        {/* <p>
           Fill out the form below, email me, or check out one of the links
           below.
-        </p>
+        </p> */}
         <div className={styles.divider3}></div>
       </div>
 
