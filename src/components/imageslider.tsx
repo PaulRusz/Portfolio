@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
-import image1 from "../assets/images/SA.png";
-import image2 from "../assets/images/SA2.png";
-import image3 from "../assets/images/Charleston.png";
-import image4 from "../assets/images/sophierizz.png";
+import image1 from "../assets/images/SA.webp";
+import image2 from "../assets/images/SA2.webp";
+import image3 from "../assets/images/Charleston.webp";
+import image4 from "../assets/images/sophierizz.webp";
 import styles from "../styles/imageslider.module.scss";
 
 const images = [image1, image2, image3, image4];
