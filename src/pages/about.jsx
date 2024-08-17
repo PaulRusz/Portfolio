@@ -46,24 +46,24 @@ export default function About() {
             </p>
             <p>
               While I acknowledge that there's always more to learn, I thrive on
-              the challenge of tackling complex problems and honing my coding
-              skills. I'm excited about the possibilities that lie ahead as I
-              continue to grow in this dynamic field.
+              the challenge of tackling complex problems and honing my skills.
+              I'm excited about the possibilities that lie ahead as I continue
+              to grow in this dynamic field.
             </p>
             <div className={styles.divider3}></div>
             <p>
-              When I'm not immersed in work or coding projects, you can find me
-              staying active, spending some downtime outdoors, and exploring
-              this beautiful pale blue dot.
+              You can usually find me staying active, spending some downtime
+              outdoors, nerding out to Marvel, GoT, or most things sci-fi and
+              exploring this beautiful pale blue dot.
             </p>
             <p>
-              I also spend my time diving into captivating reads, looking for
+              {/* I also spend my time diving into captivating reads, looking for
               newly released music, or searching for the best lasagna the East
               Coast has to offer.
             </p>
             <p>
               I'm sure there's much more to me than what's listed here, so don't
-              hesitate to reach out if you'd like to learn more.
+              hesitate to reach out if you'd like to learn more. */}
             </p>
           </div>
         </div>
