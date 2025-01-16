@@ -16,7 +16,7 @@ export default function Resume() {
         <div className={styles.resumeContent}>
           <a
             className={styles.resumeButton}
-            href="https://drive.google.com/uc?id=1_llQNvcsJLO9DLgiKajq8TrmFZ4PsGtRChdpIDKZ2-4&export=download"
+            href="https://drive.google.com/uc?id=15KpFnZcJfkW-7DIV6zZtgv64DAU6CIl2&export=download"
             download="Resume.pdf"
           >
             Download my CV
