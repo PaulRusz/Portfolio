@@ -4,6 +4,8 @@ import styles from "../styles/portfolio.module.scss";
 import FriendsBlog from "../assets/images/FriendsBlog.png";
 import Workout1 from "../assets/images/Workout1.0.png";
 import Workout2 from "../assets/images/Workout2.png";
+import RateThis from "../assets/images/RateThis.png";
+import TM from "../assets/images/TM.png";
 
 export default function Portfolio() {
   return (
@@ -127,6 +129,87 @@ export default function Portfolio() {
                   Workout Tracker 2.0
                 </a>{" "}
                 GitHub for details on my contributions.
+              </p>
+            </div>
+
+            <div className={styles.projectItem}>
+              <a
+                className={styles.link}
+                href="https://ratethis.netlify.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                RateThis
+                <br />
+                <br />
+                <img
+                  src={process.env.PUBLIC_URL + RateThis}
+                  alt="RateThis"
+                  width={500}
+                  height={500}
+                  style={{ width: "100%", height: "auto" }}
+                />
+              </a>
+              <p className={styles.fancyBullet}>
+                This web application allows users to create a personalized
+                profile, log in, and rate various items, such as movies, TV
+                shows, restaurants, and more. The platform serves as a dynamic
+                and convenient reference for users to track their ratings over
+                time. Designed with user-friendliness and versatility in mind,
+                it offers a seamless way to document and revisit personal
+                preferences, making it a perfect tool for movie buffs, foodies,
+                and anyone who loves keeping tabs on their favorites.
+              </p>
+              <p className={styles.fancyBullet}>
+                RateThis uses JavaScript, SCSS,
+                <br></br>
+              </p>
+              <p className={styles.fancyBullet}>
+                Refer to{" "}
+                <a href="https://github.com/PaulRusz/rating-application">
+                  RateThis
+                </a>{" "}
+                GitHub for details.
+              </p>
+            </div>
+
+            <div className={styles.projectItem}>
+              <a
+                className={styles.link}
+                href="https://travismcdermott.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Political Portfolio
+                <br />
+                <br />
+                <img
+                  src={process.env.PUBLIC_URL + TM}
+                  alt="Political Portfolio"
+                  width={500}
+                  height={500}
+                  style={{ width: "100%", height: "auto" }}
+                />
+              </a>
+              <p className={styles.fancyBullet}>
+                I designed and developed a political website for a local
+                politician to connect with constituents. The site enables
+                residents to explore his views, contact him directly, make
+                donations, and access city resources. With a user-friendly
+                design and dynamic functionality, this platform serves as an
+                interactive hub to engage with the community and provide
+                essential information.
+              </p>
+              <p className={styles.fancyBullet}>
+                The political portfolio uses Next.js, SCSS
+                <br></br>
+              </p>
+              <p className={styles.fancyBullet}>
+                Refer to{" "}
+                <a href="https://github.com/PaulRusz/travisportfolio">
+                  Political Portfolio
+                </a>{" "}
+                GitHub for details.
               </p>
             </div>
           </div>
