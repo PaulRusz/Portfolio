@@ -151,6 +151,8 @@ export default function Portfolio() {
                 />
               </a>
               <p className={styles.fancyBullet}>
+                ** WORK IN PROGRESS **
+                <br></br>
                 This web application allows users to create a personalized
                 profile, log in, and rate various items, such as movies, TV
                 shows, restaurants, and more. The platform serves as a dynamic

@@ -24,9 +24,21 @@ a:hover {
   color: #535bf2;
 }
 
+// h1 {
+//   font-size: 3.2em;
+//   line-height: 1.1;
+// }
+
 h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+  font-family: "Montserrat", sans-serif;
+  font-size: 48px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  background: linear-gradient(45deg, #0b161a, #1e506b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
 }
 
 button {
