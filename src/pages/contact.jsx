@@ -67,8 +67,7 @@ export default function Contact() {
       <div className={styles.contactTextContainer}>
         <motion.p whileHover={{ scale: 1.1, color: "#FFD700" }}>
           Want to get in touch?
-        </motion.p>
-        <motion.p whileHover={{ scale: 1.1, color: "#FFD700" }}>
+          <div className={styles.divider3}></div>
           Feel free to reach out!
         </motion.p>
         {/* <p>

@@ -43,13 +43,28 @@
     text-transform: uppercase; 
 }
 
+// .backgroundContainer p {
+//     text-align: center;
+//     font-size: 25px; 
+//     color: #f9f9f9;
+//     line-height: 1.5; 
+//     font-weight: 400; 
+// }
+
 .backgroundContainer p {
     text-align: center;
-    font-size: 25px; 
+    font-size: 22px;
     color: #f9f9f9;
-    line-height: 1.5; 
-    font-weight: 400; 
+    line-height: 1.6;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    border-left: 4px solid #FFD700;  // Gold accent on the left
+    background: rgba(255, 255, 255, 0.1); // Light transparency for contrast
+    border-radius: 10px;
 }
+
 
 .resumeContent h2 {
     font-size: 28px; 

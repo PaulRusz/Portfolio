@@ -35,22 +35,24 @@
   }
   
   .contactTextContainer p {
-    font-size: 26px;
-    font-weight: bold;
+    text-align: center;
+    font-size: 22px;
     color: #f9f9f9;
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
-    text-shadow: 2px 2px 5px rgba(0, 186, 220, 0.5);
-    position: relative;
-    padding: 10px 20px;
-    transition: transform 0.3s ease-in-out;
+    line-height: 1.6;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    border-left: 4px solid #FFD700;  // Gold accent on the left
+    background: rgba(255, 255, 255, 0.1); // Light transparency for contrast
+    border-radius: 10px;
   }
   
-  .contactTextContainer p:hover {
-    transform: scale(1.05);
-    color: gold;
-    text-shadow: 3px 3px 8px rgba(255, 215, 0, 0.6);
-  }
+  // .contactTextContainer p:hover {
+  //   transform: scale(1.05);
+  //   color: gold;
+  //   text-shadow: 3px 3px 8px rgba(255, 215, 0, 0.6);
+  // }
   
   
   .divider {
@@ -164,6 +166,7 @@
   }
   
   @media (max-width: 768px) { 
+    
     .contactForm {
       width: 90%;
       text-align: center;
