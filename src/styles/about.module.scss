@@ -29,16 +29,28 @@
     
  }
 
- .aboutMeContainer p {
+//  .aboutMeContainer p {
+//     margin-bottom: 20px;
+//     font-size: 22px;
+//     line-height: 1.2;
+//     color: #124e66;
+//     text-align: center;
+//     padding-left: 55px;
+//     padding-right: 55px;
+    
+//  }
+
+.aboutMeContainer p {
     margin-bottom: 20px;
     font-size: 22px;
-    line-height: 1.2;
+    line-height: 1.4;
     color: #124e66;
     text-align: center;
-    padding-left: 55px;
-    padding-right: 55px;
-    
- }
+    padding: 10px 50px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    position: relative;
+}
 
  .divider3 {
     width: 40%;
